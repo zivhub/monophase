@@ -1,0 +1,17 @@
+title: Monophase
+tagline: A one-column minimal responsive Jekyll blog theme
+author:
+  name: Songzi Vong
+  url: https://twitter.com/zivtwt
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Build Settings
+
+paginate: 2
+
+tags_path: /tags/
+categories_path: /categories/
