@@ -102,7 +102,7 @@
   display: block;
   margin-top: -.5em;
   margin-bottom: var(--spacer);
-  opacity: .5;
+  opacity: .65;
   font-size: .85em;
 }
 
@@ -132,6 +132,7 @@ a.post-category {
   &:hover,
   &:focus {
     border-bottom-style: solid;
+    border-color: var(--body-color);
     text-decoration: none;
   }
 }
