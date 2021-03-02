@@ -292,30 +292,6 @@ a.pagination-item:hover {
 }
 
 /**
- * Message -- Show different levels of alert messages to users.
- */
-
-.message-info,
-.message-warning,
-.message-danger {
-  padding: var(--spacer);
-  border-radius: var(--border-radius);
-  color: var(--body-bg-color);
-}
-
-.message-info {
-  background-color: var(--info-color);
-}
-
-.message-warning {
-  background-color: var(--warning-color);
-}
-
-.message-danger {
-  background-color: var(--danger-color);
-}
-
-/**
  * Archive
  */
 
