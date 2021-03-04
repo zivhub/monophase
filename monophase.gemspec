@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "monophase"
   spec.version       = "0.1.0"
-  spec.authors       = ["Songzi Vong"]
+  spec.authors       = ["Song-Zi Vong"]
   spec.email         = ["zivmsg@gmail.com"]
 
   spec.summary       = "A one-column minimal responsive Jekyll blog theme"
