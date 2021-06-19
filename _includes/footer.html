@@ -1,5 +1,12 @@
 <footer class="footer">
   <div class="footer-column">
+    {% if site.countapi %}
+    <p>
+      <small>
+        This page has been visited <span id="page_visits">...</span> times.
+      </small>
+    </p>
+    {% endif %}
     <p>
       <small>
         &copy;&nbsp;
@@ -19,7 +26,7 @@
     </p>
     <p>
       <small>
-        Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/zivhub/monophase" target="_blank">Monophase</a>
+        Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/zivhub/monophase" target="_blank">Monophase</a> & <a href="https://countapi.xyz" target="_blank">CountAPI</a>
       </small>
     </p>
   </div>

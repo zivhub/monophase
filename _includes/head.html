@@ -8,6 +8,18 @@
   {% seo %}
 
   <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
-  
+
+  {% if site.countapi %}
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.countapi.xyz/hit/{{ site.countapi }}/{{ page.url | remove: '/' | slice: 0, 64 }}/visits");
+    xhr.responseType = "json";
+    xhr.onload = function() {
+      document.getElementById('page_visits').textContent = this.response.value;
+    }
+    xhr.send();
+  </script>
+  {% endif %}
+
   {% include custom-head.html %}
 </head>
