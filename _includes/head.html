@@ -9,7 +9,7 @@
 
   <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
 
-  {% if site.countapi %}
+  {% if jekyll.environment == 'production' and site.countapi %}
   <script>
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.countapi.xyz/hit/{{ site.countapi }}/{{ page.url | remove: '/' | slice: 0, 64 }}");
