@@ -17,6 +17,7 @@ Check the *[live demo](https://zivlog.io/monophase/)*.
 - [Disqus](https://disqus.com/)
 - [MathJax](https://www.mathjax.org/)
 - [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+- [CountAPI](https://countapi.xyz)
 - [Jekyll Feed](https://github.com/jekyll/jekyll-feed/)
 - [Jekyll Paginate](https://github.com/jekyll/jekyll-paginate)
 - [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
@@ -37,6 +38,7 @@ Check the *[live demo](https://zivlog.io/monophase/)*.
   - [Alert Messages](#alert-messages)
   - [Alignment](#alignment)
   - [Google Analytics 4](#google-analytics-4)
+  - [CountAPI](#countapi)
   - [Archive](#archive)
 - [Contributing](#contributing)
 - [Development](#development)
@@ -163,6 +165,15 @@ To enable [Google Analytics 4](https://support.google.com/analytics/answer/10089
 ```yml
 google_analytics: G-XXXXXXX
 ```
+
+### CountAPI
+
+[CountAPI](https://countapi.xyz) is a very simple counting service. It can be enabled to serve as a very basic page counter by setting the CountAPI namespace in your `_config.yml`, for example,
+```yml
+countapi: mysite.github.io
+```
+
+Note that keys are based on `page.url` by eliminating the forward slashes (`/`) and truncating to 63 characters. Keep this in mind when creating documents ([allowed character set for keys](https://countapi.xyz/#format)).
 
 ### Archive
 
