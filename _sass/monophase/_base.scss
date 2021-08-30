@@ -84,6 +84,8 @@ table {
   width: 100%;
   border: 0 solid var(--border-color);
   border-collapse: collapse;
+  display: block;
+  overflow: auto;
 }
 
 td,
